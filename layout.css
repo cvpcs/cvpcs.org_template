@@ -1,0 +1,53 @@
+
+div.dokuwiki {
+	max-width: 800px;
+	margin: 0 auto 0 auto;
+}
+div.dokuwiki .header {
+  padding: 0;
+}
+
+
+div.dokuwiki .pagename a {
+  color: __extern__ !important;
+  text-decoration: none !important;
+}
+
+div.dokuwiki .logo {
+	padding: 5px 0 0 5px;
+	text-align:left;
+	vertical-align: middle;
+}
+
+/* ---------------  top and bottom bar ---------------- */
+div.dokuwiki .bar {
+	background: __background_alt__;
+	border-top: solid 1px #f3f1e7;
+  clear: both;
+  text-align:right;
+}
+div.bar-left {
+	float:left;
+}
+
+div.dokuwiki #bar__bottom {
+  margin-bottom:1em;
+}
+
+/* ------------- File Metadata ----------------------- */
+
+div.dokuwiki div.meta {
+	background-color:#fff;
+	padding: 10px 15px;
+  clear: both;
+  color: __text_alt__;
+  font-size: 0.8em;
+}
+
+div.dokuwiki div.meta div.user {
+  float: left;
+}
+
+div.dokuwiki div.meta div.doc {
+  text-align: right;
+}

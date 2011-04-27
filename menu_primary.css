@@ -1,0 +1,72 @@
+/**
+ * @author Marcin Mierzejewski <marcin@mierzejewski.net>
+ */
+
+div.menu_primary a:link,
+div.menu_primary a:active,
+div.menu_primary a:visited
+{
+    display: block;
+    padding-right: 10px; 
+    padding-left: 10px; 
+    text-decoration: none;
+    color: #fff !important;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+div.menu_primary a:hover
+{
+    text-decoration: underline;
+    color: #0ff !important;
+}
+
+div.menu_primary a
+{
+    background: none !important;
+    border: none !important;
+}
+
+div.menu_primary h1,
+div.menu_primary h2,
+div.menu_primary h3,
+div.menu_primary h4,
+div.menu_primary h5,
+div.menu_primary h6 
+{
+  font-size:0.8125em;
+  font-family: Verdana;
+  font-weight:bold;
+  padding-bottom: 0px;
+}
+
+div.menu_primary
+{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border: 0px;
+    list-style: none;
+    height: 30px;
+}
+
+div.menu_primary ul
+{ 
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    white-space: nowrap;
+    float: right;
+}
+
+div.menu_primary li
+{ 
+    width: auto !important;
+    float: left;
+    margin: 0px;
+    font-size: 11px;
+    line-height: 35px;
+    text-align: center;
+    background: none;
+    padding-left: 0px;
+}
