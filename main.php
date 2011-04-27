@@ -29,17 +29,20 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title><?php echo strip_tags($conf['title'])?> &#187; <?php tpl_pagetitle()?></title>
 
+  <!-- include jQuery before the meta headers so we don't conflict with $ -->
+  <script type="text/javascript" src="<?php echo $DOKU_TPL?>js/jquery-1.5.2.min.js"></script>
+
   <?php tpl_metaheaders()?>
 
   <link rel="shortcut icon" href="<?php echo $DOKU_TPL?>images/favicon.png" />
   <link rel="stylesheet" media="screen" type="text/css" href="<?php echo $DOKU_TPL?>menu_primary.css" />
 
-  <script type="text/javascript" src="<?php echo $DOKU_TPL?>js/jquery-1.5.2.min.js"></script>
+  <!-- hex_hover stuff -->
   <script type="text/javascript" src="<?php echo $DOKU_TPL?>js/hex_hover.js"></script>
   <script type="text/javascript">
     // find the div.fade elements and hook the hover event
-    $(document).ready(function() {
-        setup_hex_hover('.tdr_button', '<?php echo $DOKU_TPL?>images/background-tdr.png');
+    jQuery(document).ready(function() {
+        setup_hex_hover('.tdr_button', '<?php echo $DOKU_TPL?>images/backgrounds/tdr.png');
       });
   </script>
 
