@@ -845,6 +845,35 @@ div.dokuwiki div.imagemeta img.thumb {
 }
 
 div.error {
-	padding: 4px 6px;
-	background-position: 5px 3px;
+    padding: 4px 6px;
+    background-position: 5px 3px;
+}
+
+/* ---------------  Data Table Formatting  ----------------- */
+div.dokuwiki div.dataplugin_entry dl {
+    margin: 1em 1em 1em 0;
+}
+
+div.dokuwiki div.dataplugin_entry dl dt {
+    text-align: left;
+    margin-right: 0.5em;
+}
+
+div.dokuwiki div.dataplugin_entry dl dd {
+    margin: 0;
+}
+
+div.dokuwiki div.dataplugin_entry.project dl { position: relative; padding-bottom: 3em; }
+div.dokuwiki div.dataplugin_entry.project dl dd.description { clear: left; }
+div.dokuwiki div.dataplugin_entry.project dl dt.qr.code { margin-top: 50px; }
+div.dokuwiki div.dataplugin_entry.project dl dd.qr.code img { width: 120px; height: 120px; }
+div.dokuwiki div.dataplugin_entry.project dl dd.qr.code { margin: 0 -1.5em; }
+div.dokuwiki div.dataplugin_entry.project dl dt.last.update { display: none; }
+div.dokuwiki div.dataplugin_entry.project dl dd.last.update {
+    position: absolute;
+    height: 1.5em;
+    bottom: 2px;
+    right: 5px;
+    font-weight: 900;
+    opacity: 0.5;
 }
