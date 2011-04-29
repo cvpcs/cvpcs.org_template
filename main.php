@@ -110,11 +110,6 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
     <!-- wikipage start -->
     <?php tpl_content()?>
     <!-- wikipage stop -->
-
-    <?php
-    if (file_exists(DOKU_PLUGIN.'googleads/code.php')) include_once(DOKU_PLUGIN.'googleads/code.php');
-    if (function_exists('gads_code')) gads_code();
-    ?>
   </div>
 
   <div class="clearer">&nbsp;</div>
@@ -154,7 +149,12 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
     </div>
 
   </div>
-<?php /*old includehook*/ @include(dirname(__FILE__).'/footer.html')?>
+
+   <?php
+   if (file_exists(DOKU_PLUGIN.'googleads/code.php')) include_once(DOKU_PLUGIN.'googleads/code.php');
+   if (function_exists('gads_code')) gads_code();
+   /*old includehook*/ @include(dirname(__FILE__).'/footer.html');
+   ?>
 </div>
 
 <div class="no"><?php /* provide DokuWiki housekeeping, required in all templates */ tpl_indexerWebBug()?></div>
