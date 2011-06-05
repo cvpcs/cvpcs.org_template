@@ -13,7 +13,7 @@ $tgt = ($conf['target']['extern']) ? 'target="'.$conf['target']['extern'].'"' : 
       <a <?php echo $tgt?> href="<?php echo $license[$conf['license']]['url']?>" rel="license" title="<?php echo $license[$conf['license']]['name']?>"><img src="<?php echo DOKU_TPL ?>images/buttons/license.png" width="80" height="15" alt="" /></a>
       <?php } ?>
 
-      <a <?php echo $tgt?> href="http://validator.w3.org/check/referer" title="Valid XHTML 1.0"><img src="<?php echo DOKU_TPL; ?>images/buttons/xhtml.png" width="80" height="15" alt="Valid XHTML 1.0" /></a>
+      <a <?php echo $tgt?> href="http://validator.w3.org/check?uri=referer" title="Valid XHTML 1.0"><img src="<?php echo DOKU_TPL; ?>images/buttons/xhtml.png" width="80" height="15" alt="Valid XHTML 1.0" /></a>
 
       <a <?php echo $tgt?> href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" title="Valid CSS"><img src="<?php echo DOKU_TPL; ?>images/buttons/css.png" width="80" height="15" alt="Valid CSS" /></a>
 
@@ -25,7 +25,7 @@ $tgt = ($conf['target']['extern']) ? 'target="'.$conf['target']['extern'].'"' : 
 
       <a <?php echo $tgt?> href="http://dokuwiki.org/" title="Driven by DokuWiki"><img src="<?php echo DOKU_TPL; ?>images/buttons/dw.png" width="80" height="15" alt="Driven by DokuWiki" /></a>
 
-      <a <?php echo $tgt?> href="http://cvpcs.org/feed.php?mode=blogtng&blog=default" title="RSS Feed"><img src="<?php echo DOKU_TPL; ?>images/buttons/rss.png" width="80" height="15" alt="RSS Feed" /></a>
+      <a <?php echo $tgt?> href="http://cvpcs.org/feed.php?mode=blogtng&amp;blog=default" title="RSS Feed"><img src="<?php echo DOKU_TPL; ?>images/buttons/rss.png" width="80" height="15" alt="RSS Feed" /></a>
 
       <input type="hidden" name="cmd" value="_s-xclick" />
       <input type="hidden" name="hosted_button_id" value="CQWCR2GFWFDRQ" />

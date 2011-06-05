@@ -37,12 +37,23 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
   <link rel="shortcut icon" href="<?php echo $DOKU_TPL?>images/favicon.png" />
   <link rel="stylesheet" media="screen" type="text/css" href="<?php echo $DOKU_TPL?>menu_primary.css" />
 
+  <!-- google plusone stuff -->
+  <script type="text/javascript" src="http://apis.google.com/js/plusone.js">
+    {'parsetags': 'explicit'}
+  </script>
+
   <!-- hex_hover stuff -->
   <script type="text/javascript" src="<?php echo $DOKU_TPL?>js/hex_hover.js"></script>
+
+  <!-- jquery document load function -->
   <script type="text/javascript">
-    // find the div.fade elements and hook the hover event
+    // once the document is ready, setup our stuffs
     jQuery(document).ready(function() {
+        // find the div.fade elements and hook the hover event
         setup_hex_hover('.tdr_button', '<?php echo $DOKU_TPL?>images/backgrounds/tdr.png');
+
+        // load the plusone button!
+        gapi.plusone.render('google-plusone-button', {'size': 'small', 'count': 'true'});
       });
   </script>
 
@@ -71,6 +82,7 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
 
     <div class="bar" id="bar__top">
       <div class="bar-left" id="bar__topleft">
+        <div id="google-plusone-button"></div>
         <?php if($INFO['userinfo']) { tpl_button('edit'); } ?>
         <?php if($INFO['userinfo']) { tpl_button('history'); } ?>
       </div>
