@@ -47,11 +47,6 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
   </script>
 
   <?php /*old includehook*/ @include(dirname(__FILE__).'/meta.html')?>
-
-  <?php
-  if (file_exists(DOKU_PLUGIN.'googleanalytics/code.php')) include_once(DOKU_PLUGIN.'googleanalytics/code.php');
-  if (function_exists('ga_google_analytics_code')) ga_google_analytics_code();
-  ?>
 </head>
 
 <body>
