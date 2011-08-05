@@ -58,6 +58,9 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
   </script>
 
   <?php /*old includehook*/ @include(dirname(__FILE__).'/meta.html')?>
+
+  <link rel="openid.server" href="http://openid.yubico.com/server.php" />
+  <link rel="openid.delegate" href="http://openid.yubico.com/server.php/idpage?user=vvthekcnkkfj" />
 </head>
 
 <body>
