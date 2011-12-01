@@ -50,7 +50,7 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
     // once the document is ready, setup our stuffs
     jQuery(document).ready(function() {
         // find the div.fade elements and hook the hover event
-        setup_hex_hover('.tdr_button', '<?php echo $DOKU_TPL?>images/backgrounds/tdr.png');
+        //setup_hex_hover('.tdr_button', '<?php echo $DOKU_TPL?>images/backgrounds/vps.png');
 
         // load the plusone button!
         gapi.plusone.render('google-plusone-button', {'size': 'small', 'count': 'true'});
