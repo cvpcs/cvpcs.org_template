@@ -75,6 +75,9 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
     <div class="header">
       <div class="logo">
         <?php tpl_link(wl(),'<img src="'.DOKU_TPL.'images/logo.png" alt="logo" />','id="dokuwiki__top" accesskey="h" title="[ALT+H]"')?>
+        <a href="https://www.google.com/landing/takeaction/" id="dokuwiki__top">
+          <img style="position: absolute; top: -35px; left: -3px;" src="<?php print DOKU_TPL.'images/sopa.png'; ?>" alt="nosopa" />
+        </a>
       </div>
       <!-- menu_primary -->
       <div class="menu_primary">
